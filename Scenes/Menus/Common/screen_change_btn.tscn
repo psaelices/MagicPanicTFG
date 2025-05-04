@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxuiqckvc5f4c"]
+
+[ext_resource type="Script" uid="uid://cw5l2qd7q36dg" path="res://Scripts/Menus/common/screen_change_btn.gd" id="1_phnp5"]
+
+[node name="ScreenChangeBtn" type="Button"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 31.0
+grow_horizontal = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+text = "Cambiar escena"
+script = ExtResource("1_phnp5")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

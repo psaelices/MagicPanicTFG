@@ -1,0 +1,38 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Magic_Panic"
+run/main_scene="uid://dhp4dk5sro5li"
+config/features=PackedStringArray("4.4", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+SceneManager="*res://Scripts/Globals/scene_manager.gd"
+GameGlobal="*res://Scripts/Globals/game_global.gd"
+
+[display]
+
+window/size/viewport_width=1220
+window/size/viewport_height=700
+
+[file_customization]
+
+folder_colors={
+"res://Scenes/": "blue",
+"res://Scripts/": "green"
+}
+
+[layer_names]
+
+2d_physics/layer_1="Mago"
+2d_physics/layer_2="Wall"

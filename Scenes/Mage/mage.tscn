@@ -1,0 +1,136 @@
+[gd_scene load_steps=21 format=3 uid="uid://dv7xopl4qnynx"]
+
+[ext_resource type="SpriteFrames" uid="uid://bn5tb1qjs2213" path="res://sprites/animations/blue_mage_animation.tres" id="1_ebuwf"]
+[ext_resource type="Script" uid="uid://bnyeokvdfaemv" path="res://Scripts/Mage/mage.gd" id="1_o1hby"]
+[ext_resource type="Texture2D" uid="uid://bybkv03qo0gst" path="res://sprites/Blast Spell Sprite Sheet.png" id="2_2v4p7"]
+[ext_resource type="Script" uid="uid://dblhrqm3obp2p" path="res://Scripts/Mage/StateMachine/StateMachine.gd" id="3_c4jcv"]
+[ext_resource type="Texture2D" uid="uid://b8c6j0ji185xx" path="res://sprites/blue_basic.png" id="3_ljsts"]
+[ext_resource type="Script" uid="uid://ds2jdues4rd4w" path="res://Scripts/Mage/StateMachine/States/RoamState.gd" id="4_o1hby"]
+[ext_resource type="Script" uid="uid://b0ubikf748w7v" path="res://Scripts/Mage/StateMachine/States/transitionState.gd" id="6_4xmr4"]
+[ext_resource type="Script" uid="uid://bv4tj7q1ncmdq" path="res://Scripts/Mage/StateMachine/States/chargeState.gd" id="7_1rshc"]
+[ext_resource type="Script" uid="uid://cq2i2yi7xqhsy" path="res://Scripts/Mage/StateMachine/States/explodeState.gd" id="8_agiyp"]
+[ext_resource type="Script" uid="uid://4k0y0wqexxlx" path="res://Scripts/Mage/StateMachine/States/deathState.gd" id="9_2umjj"]
+[ext_resource type="Script" uid="uid://coxldo3o0r05y" path="res://Scripts/Mage/StateMachine/States/pickedState.gd" id="11_qk2jc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qk2jc"]
+atlas = ExtResource("3_ljsts")
+region = Rect2(320, 256, 64, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c4jcv"]
+atlas = ExtResource("2_2v4p7")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o1hby"]
+atlas = ExtResource("2_2v4p7")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4xmr4"]
+atlas = ExtResource("2_2v4p7")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1rshc"]
+atlas = ExtResource("2_2v4p7")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_agiyp"]
+atlas = ExtResource("2_2v4p7")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2umjj"]
+atlas = ExtResource("2_2v4p7")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ljsts"]
+animations = [{
+"frames": [{
+"duration": 10.0,
+"texture": SubResource("AtlasTexture_qk2jc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c4jcv")
+}, {
+"duration": 1.1,
+"texture": SubResource("AtlasTexture_o1hby")
+}, {
+"duration": 1.2,
+"texture": SubResource("AtlasTexture_4xmr4")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_1rshc")
+}, {
+"duration": 1.2,
+"texture": SubResource("AtlasTexture_agiyp")
+}, {
+"duration": 1.4,
+"texture": SubResource("AtlasTexture_2umjj")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"default",
+"speed": 15.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ebuwf"]
+radius = 40.0
+height = 92.0
+
+[node name="Mage" type="CharacterBody2D"]
+collision_mask = 2
+input_pickable = true
+script = ExtResource("1_o1hby")
+
+[node name="MageSprite" type="AnimatedSprite2D" parent="."]
+scale = Vector2(3, 3)
+sprite_frames = ExtResource("1_ebuwf")
+animation = &"explode"
+
+[node name="ParticlesSprite" type="AnimatedSprite2D" parent="."]
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_ljsts")
+frame = 7
+frame_progress = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 9)
+shape = SubResource("CapsuleShape2D_ebuwf")
+
+[node name="ChargeTimer" type="Timer" parent="."]
+wait_time = 8.0
+one_shot = true
+autostart = true
+
+[node name="ExplosionTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="StateMachine" type="Node" parent="."]
+script = ExtResource("3_c4jcv")
+initial_state = "roam"
+
+[node name="Roam" type="Node" parent="StateMachine" node_paths=PackedStringArray("mage")]
+script = ExtResource("4_o1hby")
+mage = NodePath("../..")
+
+[node name="Transition" type="Node" parent="StateMachine" node_paths=PackedStringArray("mage")]
+script = ExtResource("6_4xmr4")
+mage = NodePath("../..")
+
+[node name="Charge" type="Node" parent="StateMachine" node_paths=PackedStringArray("mage")]
+script = ExtResource("7_1rshc")
+mage = NodePath("../..")
+
+[node name="Explode" type="Node" parent="StateMachine" node_paths=PackedStringArray("mage")]
+script = ExtResource("8_agiyp")
+mage = NodePath("../..")
+
+[node name="Death" type="Node" parent="StateMachine" node_paths=PackedStringArray("mage")]
+script = ExtResource("9_2umjj")
+mage = NodePath("../..")
+
+[node name="Picked" type="Node" parent="StateMachine" node_paths=PackedStringArray("mage")]
+script = ExtResource("11_qk2jc")
+mage = NodePath("../..")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

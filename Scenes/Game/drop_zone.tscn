@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6goqr4g2vvhh"]
+
+[ext_resource type="Script" uid="uid://dfwr0t2l6ml6x" path="res://Scripts/Game/drop_zone.gd" id="1_41y81"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jexd7"]
+size = Vector2(250, 350)
+
+[node name="DropZone" type="Area2D"]
+collision_layer = 0
+script = ExtResource("1_41y81")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_jexd7")
+
+[connection signal="body_entered" from="." to="." method="_on_mage_entered"]

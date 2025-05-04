@@ -1,0 +1,68 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhp4dk5sro5li"]
+
+[ext_resource type="Script" uid="uid://0qcx4dlwo6y1" path="res://Scripts/Menus/main_menu.gd" id="1_38aua"]
+[ext_resource type="PackedScene" uid="uid://dxuiqckvc5f4c" path="res://Scenes/Menus/Common/screen_change_btn.tscn" id="2_pha2q"]
+
+[node name="Main Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_38aua")
+
+[node name="PanelContainer2" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer2"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer2/MarginContainer"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer2/MarginContainer/PanelContainer"]
+layout_mode = 2
+
+[node name="StartBtn2" parent="PanelContainer2/MarginContainer/PanelContainer/VBoxContainer" instance=ExtResource("2_pha2q")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "Start Game"
+scene_path = "res://Scenes/Game/game.tscn"
+
+[node name="Leaderboard_btn" parent="PanelContainer2/MarginContainer/PanelContainer/VBoxContainer" instance=ExtResource("2_pha2q")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "Leaderboard"
+scene_path = "res://Scenes/Menus/leaderboard.tscn"
+
+[node name="InstructionBtn" parent="PanelContainer2/MarginContainer/PanelContainer/VBoxContainer" instance=ExtResource("2_pha2q")]
+layout_mode = 2
+size_flags_horizontal = 1
+text = "Intructions"
+scene_path = "res://Scenes/Menus/Instructions.tscn"
+
+[node name="ExitGameBtn" type="Button" parent="PanelContainer2/MarginContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "Exit Game"
+
+[node name="Label" type="Label" parent="PanelContainer2/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 64
+text = "Magic Panic"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="PanelContainer2/MarginContainer/PanelContainer/VBoxContainer/ExitGameBtn" to="." method="_on_exit_game_btn_pressed"]

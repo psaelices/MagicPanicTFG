@@ -1,0 +1,4 @@
+res://Scenes/Game/game.tscn
+res://sprites/animations/blue_mage_animation.tres
+res://resources/tilemap.tres
+res://Scripts/Game/SpawnAlgorithms/SpawnAlgorithm.gd

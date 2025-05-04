@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://btv0g0dg01wpq"]
+
+[ext_resource type="Script" uid="uid://cuutipwiqnoim" path="res://Scripts/Game/mage_spawner.gd" id="1_mbodb"]
+
+[node name="MageSpawner" type="Node2D"]
+script = ExtResource("1_mbodb")

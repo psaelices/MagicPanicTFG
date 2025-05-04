@@ -1,0 +1,15 @@
+ColorRect
+TextureRect
+TileMapLayer
+TileMap
+Button
+MarginContainer
+VBoxContainer
+PanelContainer
+HBoxContainer
+Label
+CanvasLayer
+CollisionShape2D
+StaticBody2D
+Area2D
+Sprite2D

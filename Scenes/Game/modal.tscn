@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://dskxqqcfxuul6"]
+
+[ext_resource type="PackedScene" uid="uid://cuxtrwxlqm3sc" path="res://Scenes/Menus/leaderboard.tscn" id="1_ec250"]
+[ext_resource type="Script" uid="uid://b88ovs4tfox4p" path="res://Scenes/Game/modal.gd" id="1_yjij6"]
+
+[node name="Modal" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yjij6")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/PanelContainer"]
+layout_mode = 2
+
+[node name="Leaderboard" parent="MarginContainer/PanelContainer/VBoxContainer" instance=ExtResource("1_ec250")]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ResetBtn" type="Button" parent="MarginContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "Volver a jugar"
+
+[connection signal="pressed" from="MarginContainer/PanelContainer/VBoxContainer/ResetBtn" to="." method="_on_reset_btn_pressed"]
