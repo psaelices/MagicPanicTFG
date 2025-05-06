@@ -1,83 +1,83 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1746393193
-icon.svg::CompressedTexture2D/CompressedTexture2D::30875079690524816::1746383537::1746383537::1::::<><><>0<>0<>e25e0c3ba285b36b284831327f614ae6<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://Assets/::1746384205
-::res://Assets/music/::1746387515
-menu_music.wav::AudioStreamWAV/AudioStreamWAV::3883641828154480012::1746373044::1746387515::1::::<><><>0<>0<>bddce15a5f6c1080605561ae49087969<>res://.godot/imported/menu_music.wav-98e559630ec2c3e09924384afa52857e.sample::
-while_playing.wav::AudioStreamWAV/AudioStreamWAV::7145611378918427003::1746373013::1746387515::1::::<><><>0<>0<>9a6376e391eb666900df4fe19a7326e5<>res://.godot/imported/while_playing.wav-92f9cd6a278cfdab0d7d5c1408b707de.sample::
-::res://Assets/sound_effects/::1746387514
-casting_spell.wav::AudioStreamWAV/AudioStreamWAV::3331962274388573149::1746373154::1746387514::1::::<><><>0<>0<>48788ff8294901b4a4498cdf221c9f43<>res://.godot/imported/casting_spell.wav-db493fb856fbea608f117a83ea7b59ad.sample::
-dragging_mages.wav::AudioStreamWAV/AudioStreamWAV::6118213909665755843::1746373310::1746387514::1::::<><><>0<>0<>4b3cb7528a4fa711cfd9edffba3d6b26<>res://.godot/imported/dragging_mages.wav-3ac833f861fa5b092fb8cbfbc14f58a0.sample::
-explosion.wav::AudioStreamWAV/AudioStreamWAV::3219927890980513766::1746373272::1746387514::1::::<><><>0<>0<>646a98528474a890f3ea10ac1669d3ba<>res://.godot/imported/explosion.wav-37abbe4b03f4e724e4d6ab1cf81c41a6.sample::
-leaving_mages.wav::AudioStreamWAV/AudioStreamWAV::4210530321393892646::1746373339::1746387514::1::::<><><>0<>0<>af4cc558337411acc3191f0c28125aed<>res://.godot/imported/leaving_mages.wav-d61ad850258605e619642261ac29ede8.sample::
-mages_steps.wav::AudioStreamWAV/AudioStreamWAV::474310096058733558::1746373208::1746387514::1::::<><><>0<>0<>a84851b6f1b23c28f1bae78bdd41640c<>res://.godot/imported/mages_steps.wav-28776245e6907b527f36684fd257c84d.sample::
-::res://resources/::1746392987
-tilemap.tres::TileSet::6599207158744075322::1746392987::0::1::::<><><>0<>0<><>::uid://b81y7vlw5l1f1::::res://sprites/tileset/Tileset-Terrain-old prison.png
-::res://Scenes/::1746383549
-::res://Scenes/Game/::1746392987
-drop_zone.tscn::PackedScene/PackedScene::6961961335296597537::1746383549::0::1::::<><><>0<>0<><>::uid://dfwr0t2l6ml6x::::res://Scripts/Game/drop_zone.gd
-game.tscn::PackedScene::230473761850835170::1746392987::0::1::::<><><>0<>0<><>::uid://dng0msak83tjp::::res://Scripts/Game/game.gd<>uid://cuywl1506fvab::::res://sprites/bg placeholder.jpg<>uid://btv0g0dg01wpq::::res://Scenes/Game/mage_spawner.tscn<>uid://c1ax8ijoh1yes::::res://resources/tilemap.tres<>uid://c6goqr4g2vvhh::::res://Scenes/Game/drop_zone.tscn<>uid://yrp4rrw7tn7b::::res://Scripts/Game/ui.gd<>uid://dskxqqcfxuul6::::res://Scenes/Game/modal.tscn
-mage_spawner.tscn::PackedScene/PackedScene::3764890603258798278::1746383549::0::1::::<><><>0<>0<><>::uid://cuutipwiqnoim::::res://Scripts/Game/mage_spawner.gd
-modal.gd::GDScript/GDScript::4771665520293038885::1746383549::0::1::::Modal<>PanelContainer<><>0<>0<><>::
-modal.tscn::PackedScene/PackedScene::8444730921362524437::1746383549::0::1::::<><><>0<>0<><>::uid://cuxtrwxlqm3sc::::res://Scenes/Menus/leaderboard.tscn<>uid://b88ovs4tfox4p::::res://Scenes/Game/modal.gd
-::res://Scenes/Mage/::1746392987
-mage.tscn::PackedScene::8700710153738841849::1746392987::0::1::::<><><>0<>0<><>::uid://bn5tb1qjs2213::::res://sprites/animations/blue_mage_animation.tres<>uid://bnyeokvdfaemv::::res://Scripts/Mage/mage.gd<>uid://bybkv03qo0gst::::res://sprites/Blast Spell Sprite Sheet.png<>uid://dblhrqm3obp2p::::res://Scripts/Mage/StateMachine/StateMachine.gd<>uid://b8c6j0ji185xx::::res://sprites/blue_basic.png<>uid://ds2jdues4rd4w::::res://Scripts/Mage/StateMachine/States/RoamState.gd<>uid://b0ubikf748w7v::::res://Scripts/Mage/StateMachine/States/transitionState.gd<>uid://bv4tj7q1ncmdq::::res://Scripts/Mage/StateMachine/States/chargeState.gd<>uid://cq2i2yi7xqhsy::::res://Scripts/Mage/StateMachine/States/explodeState.gd<>uid://4k0y0wqexxlx::::res://Scripts/Mage/StateMachine/States/deathState.gd<>uid://coxldo3o0r05y::::res://Scripts/Mage/StateMachine/States/pickedState.gd
-::res://Scenes/Menus/::1746392987
-Instructions.tscn::PackedScene::3392420659642645016::1746392987::0::1::::<><><>0<>0<><>::uid://dxuiqckvc5f4c::::res://Scenes/Menus/Common/screen_change_btn.tscn
-leaderboard.tscn::PackedScene::6225284101415051094::1746392987::0::1::::<><><>0<>0<><>::uid://dxuiqckvc5f4c::::res://Scenes/Menus/Common/screen_change_btn.tscn<>uid://dwtiqbd8jw355::::res://Scripts/Menus/leaderboard.gd
-main_menu.tscn::PackedScene::7683316345447143222::1746392987::0::1::::<><><>0<>0<><>::uid://0qcx4dlwo6y1::::res://Scripts/Menus/main_menu.gd<>uid://dxuiqckvc5f4c::::res://Scenes/Menus/Common/screen_change_btn.tscn
-::res://Scenes/Menus/Common/::1746392987
-screen_change_btn.tscn::PackedScene::8815407439932600480::1746392987::0::1::::<><><>0<>0<><>::uid://cw5l2qd7q36dg::::res://Scripts/Menus/common/screen_change_btn.gd
-::res://Scripts/::1746383551
-::res://Scripts/Game/::1746383549
-drop_zone.gd::GDScript/GDScript::7556700453778505937::1746383549::0::1::::DropZone<>Area2D<><>0<>0<><>::
-game.gd::GDScript/GDScript::8085643585163981885::1746383549::0::1::::<>Node2D<><>0<>0<><>::
-mage_spawner.gd::GDScript/GDScript::6219074526663188796::1746383549::0::1::::MageSpawner<>Node2D<><>0<>0<><>::
-ui.gd::GDScript/GDScript::1720590132248264845::1746383549::0::1::::<>CanvasLayer<><>0<>0<><>::
-::res://Scripts/Game/SpawnAlgorithms/::1746383550
-SpawnAlgorithm.gd::GDScript/GDScript::635771028088976887::1746383549::0::1::::SpawnAlgorithm<>Object<><>0<>0<><>::
-Spawn_10.gd::GDScript/GDScript::4927462897271100256::1746383549::0::1::::SpawnAlgorithm_10<>SpawnAlgorithm<><>0<>0<><>::
-Spawn_20.gd::GDScript/GDScript::6598679675139413817::1746383550::0::1::::SpawnAlgorithm_20<>SpawnAlgorithm_10<><>0<>0<><>::
-Spawn_30.gd::GDScript/GDScript::6062666467109492400::1746383550::0::1::::SpawnAlgorithm_30<>SpawnAlgorithm_20<><>0<>0<><>::
-Spawn_50.gd::GDScript/GDScript::6951025543042617930::1746383550::0::1::::SpawnAlgorithm_50<>SpawnAlgorithm_10<><>0<>0<><>::
-Spawn_80.gd::GDScript/GDScript::7387024568224748282::1746383550::0::1::::SpawnAlgorithm_80<>SpawnAlgorithm_50<><>0<>0<><>::
-Spawn_120.gd::GDScript/GDScript::8495069440412433092::1746383549::0::1::::SpawnAlgorithm_120<>SpawnAlgorithm_10<><>0<>0<><>::
-Spawn_150.gd::GDScript/GDScript::3407392214213058619::1746383550::0::1::::SpawnAlgorithm_150<>SpawnAlgorithm<><>0<>0<><>::
-Spawn_200.gd::GDScript/GDScript::3291515962429506474::1746383550::0::1::::SpawnAlgorithm_200<>SpawnAlgorithm_10<><>0<>0<><>::
-Spawn_280.gd::GDScript/GDScript::7468039488362686511::1746383550::0::1::::SpawnAlgorithm_280<>SpawnAlgorithm_150<><>0<>0<><>::
-::res://Scripts/Globals/::1746383550
-game_global.gd::GDScript/GDScript::4234713816342434036::1746383550::0::1::::<>Node<><>0<>0<><>::
-scene_manager.gd::GDScript/GDScript::4213944377069900599::1746383550::0::1::::<>Node<><>0<>0<><>::
-::res://Scripts/Mage/::1746383550
-mage.gd::GDScript/GDScript::3348689143988078253::1746383550::0::1::::Mage<>CharacterBody2D<><>0<>0<><>::
-::res://Scripts/Mage/StateMachine/::1746383550
-StateMachine.gd::GDScript/GDScript::7252615287659955017::1746383550::0::1::::StateMachine<>Node<><>0<>0<><>::
-::res://Scripts/Mage/StateMachine/States/::1746383551
-chargeState.gd::GDScript/GDScript::3921424756630082758::1746383550::0::1::::<>State<><>0<>0<><>::
-deathState.gd::GDScript/GDScript::2057682374719109857::1746383550::0::1::::<>State<><>0<>0<><>::
-explodeState.gd::GDScript/GDScript::5952136291736043784::1746383550::0::1::::<>State<><>0<>0<><>::
-pickedState.gd::GDScript/GDScript::5803639890215804240::1746383550::0::1::::<>State<><>0<>0<><>::
-RoamState.gd::GDScript/GDScript::8478952303743597460::1746383550::0::1::::<>State<><>0<>0<><>::
-State.gd::GDScript/GDScript::7414276506756523428::1746383550::0::1::::State<>Node<><>0<>0<><>::
-transitionState.gd::GDScript/GDScript::4182504867520646213::1746383551::0::1::::<>State<><>0<>0<><>::
-::res://Scripts/Menus/::1746383801
-leaderboard.gd::GDScript/GDScript::8743154155757818922::1746383801::0::1::::Leaderboard<>Control<><>0<>0<><>::
-main_menu.gd::GDScript/GDScript::1787915170602454966::1746383551::0::1::::<>Control<><>0<>0<><>::
-::res://Scripts/Menus/common/::1746383551
-screen_change_btn.gd::GDScript/GDScript::6379644209885038088::1746383551::0::1::::<>Button<><>0<>0<><>::
-::res://sprites/::1746383551
-bg placeholder.jpg::CompressedTexture2D/CompressedTexture2D::6227520136946869517::1746383551::1746383551::1::::<><><>0<>0<>6e5a74e9d7482438f6474d611ed14487<>res://.godot/imported/bg placeholder.jpg-455c614c43db6fc4be623a45af2408e9.ctex::
-Blast Spell Sprite Sheet.png::CompressedTexture2D/CompressedTexture2D::4073663337444548407::1746383551::1746383551::1::::<><><>0<>0<>760dba1e9ba49c2e1b91af10bf284b9a<>res://.godot/imported/Blast Spell Sprite Sheet.png-45614559744adffd496f2f8e4540ad97.ctex::
-blue_basic.png::CompressedTexture2D/CompressedTexture2D::4708680905563747717::1746383551::1746383551::1::::<><><>0<>0<>6e0eab0d2f49c1a872761a4f04006df9<>res://.godot/imported/blue_basic.png-ded8076d3a9255a080ae7ceafe38eeef.ctex::
-red_basic.png::CompressedTexture2D/CompressedTexture2D::7040182570699981305::1746383551::1746383551::1::::<><><>0<>0<>8b7fa8cfa9afbc55faa2e0d265d7a328<>res://.godot/imported/red_basic.png-6a0d648099b230a6672b3477f507cba0.ctex::
-::res://sprites/animations/::1746392987
-blue_mage_animation.tres::SpriteFrames::3361963783023823636::1746392987::0::1::::<><><>0<>0<><>::uid://b8c6j0ji185xx::::res://sprites/blue_basic.png
-red_mage_animation.tres::SpriteFrames/SpriteFrames::2691524904700553602::1746383551::0::1::::<><><>0<>0<><>::uid://c7kk1p1q8slfd::::res://sprites/red_basic.png
-::res://sprites/tileset/::1746383551
-atlas-props-old prison.png::CompressedTexture2D/CompressedTexture2D::1990256166742223896::1746383551::1746383551::1::::<><><>0<>0<>d5b5edea1992c35fd646ba8fcd141492<>res://.godot/imported/atlas-props-old prison.png-1975a879538f892616712d2dbeeadaf8.ctex::
-magic flame.png::CompressedTexture2D/CompressedTexture2D::6200763037519947779::1746383551::1746383551::1::::<><><>0<>0<>2081fcaa73978bc49c52a0837f53ab33<>res://.godot/imported/magic flame.png-18694f048ee62d05bae5edc23bff8a26.ctex::
-Prison Gate- particles.png::CompressedTexture2D/CompressedTexture2D::5240173801436897729::1746383551::1746383551::1::::<><><>0<>0<>d1a1f5100a70f4052c21de042f19c1b8<>res://.godot/imported/Prison Gate- particles.png-28ec5decc2adf3cbabb8c228c8ff48d5.ctex::
-Prison Gate-flames.png::CompressedTexture2D/CompressedTexture2D::3280582020941241378::1746383551::1746383551::1::::<><><>0<>0<>8045a31b8d6340d23ce0d7899d49afdd<>res://.godot/imported/Prison Gate-flames.png-fd65ecb8633b25ca654f55ca4e144ec9.ctex::
-Prison Gate-vortex.png::CompressedTexture2D/CompressedTexture2D::6662468625569341636::1746383551::1746383551::1::::<><><>0<>0<>579bf46740ab68a01bfd3c4385bd69a4<>res://.godot/imported/Prison Gate-vortex.png-8ab559d5cd5f460e5053f40ec4b47ef7.ctex::
-Prison Gate-with wall.png::CompressedTexture2D/CompressedTexture2D::198321066241188052::1746383551::1746383551::1::::<><><>0<>0<>95b76aff90983181aad660de868ad002<>res://.godot/imported/Prison Gate-with wall.png-a927dcb1e7625339af68015c0ee1bb00.ctex::
-Tileset-Terrain-old prison.png::CompressedTexture2D/CompressedTexture2D::4757841819608409316::1746383551::1746383551::1::::<><><>0<>0<>05e163c5f22832cb5eef8dc0cab17615<>res://.godot/imported/Tileset-Terrain-old prison.png-b0aeb0471dfc3a0aff7e0811e265b73c.ctex::
+::res://::1746570175
+icon.svg::CompressedTexture2D/CompressedTexture2D::30875079690524816::1746393636::1746394473::1::::<><><>0<>0<>e25e0c3ba285b36b284831327f614ae6<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://Assets/::1746393636
+::res://Assets/music/::1746394474
+menu_music.wav::AudioStreamWAV/AudioStreamWAV::3883641828154480012::1746393636::1746394474::1::::<><><>0<>0<>bddce15a5f6c1080605561ae49087969<>res://.godot/imported/menu_music.wav-98e559630ec2c3e09924384afa52857e.sample::
+while_playing.wav::AudioStreamWAV/AudioStreamWAV::7145611378918427003::1746393636::1746394474::1::::<><><>0<>0<>9a6376e391eb666900df4fe19a7326e5<>res://.godot/imported/while_playing.wav-92f9cd6a278cfdab0d7d5c1408b707de.sample::
+::res://Assets/sound_effects/::1746394474
+casting_spell.wav::AudioStreamWAV/AudioStreamWAV::3331962274388573149::1746393636::1746394473::1::::<><><>0<>0<>48788ff8294901b4a4498cdf221c9f43<>res://.godot/imported/casting_spell.wav-db493fb856fbea608f117a83ea7b59ad.sample::
+dragging_mages.wav::AudioStreamWAV/AudioStreamWAV::6118213909665755843::1746393636::1746394473::1::::<><><>0<>0<>4b3cb7528a4fa711cfd9edffba3d6b26<>res://.godot/imported/dragging_mages.wav-3ac833f861fa5b092fb8cbfbc14f58a0.sample::
+explosion.wav::AudioStreamWAV/AudioStreamWAV::3219927890980513766::1746393636::1746394473::1::::<><><>0<>0<>646a98528474a890f3ea10ac1669d3ba<>res://.godot/imported/explosion.wav-37abbe4b03f4e724e4d6ab1cf81c41a6.sample::
+leaving_mages.wav::AudioStreamWAV/AudioStreamWAV::4210530321393892646::1746393636::1746394473::1::::<><><>0<>0<>af4cc558337411acc3191f0c28125aed<>res://.godot/imported/leaving_mages.wav-d61ad850258605e619642261ac29ede8.sample::
+mages_steps.wav::AudioStreamWAV/AudioStreamWAV::474310096058733558::1746393636::1746394473::1::::<><><>0<>0<>a84851b6f1b23c28f1bae78bdd41640c<>res://.godot/imported/mages_steps.wav-28776245e6907b527f36684fd257c84d.sample::
+::res://resources/::1746394591
+tilemap.tres::TileSet::6599207158744075322::1746394591::0::1::::<><><>0<>0<><>::uid://b81y7vlw5l1f1::::res://sprites/tileset/Tileset-Terrain-old prison.png
+::res://Scenes/::1746393636
+::res://Scenes/Game/::1746394837
+drop_zone.tscn::PackedScene/PackedScene::6961961335296597537::1746393636::0::1::::<><><>0<>0<><>::uid://dfwr0t2l6ml6x::::res://Scripts/Game/drop_zone.gd
+game.tscn::PackedScene::230473761850835170::1746394837::0::1::::<><><>0<>0<><>::uid://dng0msak83tjp::::res://Scripts/Game/game.gd<>uid://cuywl1506fvab::::res://sprites/bg placeholder.jpg<>uid://btv0g0dg01wpq::::res://Scenes/Game/mage_spawner.tscn<>uid://c1ax8ijoh1yes::::res://resources/tilemap.tres<>uid://c6goqr4g2vvhh::::res://Scenes/Game/drop_zone.tscn<>uid://yrp4rrw7tn7b::::res://Scripts/Game/ui.gd<>uid://dskxqqcfxuul6::::res://Scenes/Game/modal.tscn
+mage_spawner.tscn::PackedScene/PackedScene::3764890603258798278::1746393636::0::1::::<><><>0<>0<><>::uid://cuutipwiqnoim::::res://Scripts/Game/mage_spawner.gd
+modal.gd::GDScript/GDScript::4771665520293038885::1746393636::0::1::::Modal<>PanelContainer<><>0<>0<><>::
+modal.tscn::PackedScene/PackedScene::8444730921362524437::1746393636::0::1::::<><><>0<>0<><>::uid://cuxtrwxlqm3sc::::res://Scenes/Menus/leaderboard.tscn<>uid://b88ovs4tfox4p::::res://Scenes/Game/modal.gd
+::res://Scenes/Mage/::1746394837
+mage.tscn::PackedScene::8700710153738841849::1746394837::0::1::::<><><>0<>0<><>::uid://bn5tb1qjs2213::::res://sprites/animations/blue_mage_animation.tres<>uid://bnyeokvdfaemv::::res://Scripts/Mage/mage.gd<>uid://bybkv03qo0gst::::res://sprites/Blast Spell Sprite Sheet.png<>uid://dblhrqm3obp2p::::res://Scripts/Mage/StateMachine/StateMachine.gd<>uid://b8c6j0ji185xx::::res://sprites/blue_basic.png<>uid://ds2jdues4rd4w::::res://Scripts/Mage/StateMachine/States/RoamState.gd<>uid://b0ubikf748w7v::::res://Scripts/Mage/StateMachine/States/transitionState.gd<>uid://bv4tj7q1ncmdq::::res://Scripts/Mage/StateMachine/States/chargeState.gd<>uid://cq2i2yi7xqhsy::::res://Scripts/Mage/StateMachine/States/explodeState.gd<>uid://4k0y0wqexxlx::::res://Scripts/Mage/StateMachine/States/deathState.gd<>uid://coxldo3o0r05y::::res://Scripts/Mage/StateMachine/States/pickedState.gd
+::res://Scenes/Menus/::1746394837
+Instructions.tscn::PackedScene::3392420659642645016::1746394837::0::1::::<><><>0<>0<><>::uid://dxuiqckvc5f4c::::res://Scenes/Menus/Common/screen_change_btn.tscn
+leaderboard.tscn::PackedScene::6225284101415051094::1746394837::0::1::::<><><>0<>0<><>::uid://dxuiqckvc5f4c::::res://Scenes/Menus/Common/screen_change_btn.tscn<>uid://dwtiqbd8jw355::::res://Scripts/Menus/leaderboard.gd
+main_menu.tscn::PackedScene::7683316345447143222::1746394837::0::1::::<><><>0<>0<><>::uid://0qcx4dlwo6y1::::res://Scripts/Menus/main_menu.gd<>uid://dxuiqckvc5f4c::::res://Scenes/Menus/Common/screen_change_btn.tscn
+::res://Scenes/Menus/Common/::1746394837
+screen_change_btn.tscn::PackedScene::8815407439932600480::1746394837::0::1::::<><><>0<>0<><>::uid://cw5l2qd7q36dg::::res://Scripts/Menus/common/screen_change_btn.gd
+::res://Scripts/::1746393636
+::res://Scripts/Game/::1746393636
+drop_zone.gd::GDScript/GDScript::7556700453778505937::1746393636::0::1::::DropZone<>Area2D<><>0<>0<><>::
+game.gd::GDScript/GDScript::8085643585163981885::1746393636::0::1::::<>Node2D<><>0<>0<><>::
+mage_spawner.gd::GDScript/GDScript::6219074526663188796::1746393636::0::1::::MageSpawner<>Node2D<><>0<>0<><>::
+ui.gd::GDScript/GDScript::1720590132248264845::1746393636::0::1::::<>CanvasLayer<><>0<>0<><>::
+::res://Scripts/Game/SpawnAlgorithms/::1746393636
+SpawnAlgorithm.gd::GDScript/GDScript::635771028088976887::1746393636::0::1::::SpawnAlgorithm<>Object<><>0<>0<><>::
+Spawn_10.gd::GDScript/GDScript::4927462897271100256::1746393636::0::1::::SpawnAlgorithm_10<>SpawnAlgorithm<><>0<>0<><>::
+Spawn_20.gd::GDScript/GDScript::6598679675139413817::1746393636::0::1::::SpawnAlgorithm_20<>SpawnAlgorithm_10<><>0<>0<><>::
+Spawn_30.gd::GDScript/GDScript::6062666467109492400::1746393636::0::1::::SpawnAlgorithm_30<>SpawnAlgorithm_20<><>0<>0<><>::
+Spawn_50.gd::GDScript/GDScript::6951025543042617930::1746393636::0::1::::SpawnAlgorithm_50<>SpawnAlgorithm_10<><>0<>0<><>::
+Spawn_80.gd::GDScript/GDScript::7387024568224748282::1746393636::0::1::::SpawnAlgorithm_80<>SpawnAlgorithm_50<><>0<>0<><>::
+Spawn_120.gd::GDScript/GDScript::8495069440412433092::1746393636::0::1::::SpawnAlgorithm_120<>SpawnAlgorithm_10<><>0<>0<><>::
+Spawn_150.gd::GDScript/GDScript::3407392214213058619::1746393636::0::1::::SpawnAlgorithm_150<>SpawnAlgorithm<><>0<>0<><>::
+Spawn_200.gd::GDScript/GDScript::3291515962429506474::1746393636::0::1::::SpawnAlgorithm_200<>SpawnAlgorithm_10<><>0<>0<><>::
+Spawn_280.gd::GDScript/GDScript::7468039488362686511::1746393636::0::1::::SpawnAlgorithm_280<>SpawnAlgorithm_150<><>0<>0<><>::
+::res://Scripts/Globals/::1746393636
+game_global.gd::GDScript/GDScript::4234713816342434036::1746393636::0::1::::<>Node<><>0<>0<><>::
+scene_manager.gd::GDScript/GDScript::4213944377069900599::1746393636::0::1::::<>Node<><>0<>0<><>::
+::res://Scripts/Mage/::1746393636
+mage.gd::GDScript/GDScript::3348689143988078253::1746393636::0::1::::Mage<>CharacterBody2D<><>0<>0<><>::
+::res://Scripts/Mage/StateMachine/::1746393636
+StateMachine.gd::GDScript/GDScript::7252615287659955017::1746393636::0::1::::StateMachine<>Node<><>0<>0<><>::
+::res://Scripts/Mage/StateMachine/States/::1746393636
+chargeState.gd::GDScript/GDScript::3921424756630082758::1746393636::0::1::::<>State<><>0<>0<><>::
+deathState.gd::GDScript/GDScript::2057682374719109857::1746393636::0::1::::<>State<><>0<>0<><>::
+explodeState.gd::GDScript/GDScript::5952136291736043784::1746393636::0::1::::<>State<><>0<>0<><>::
+pickedState.gd::GDScript/GDScript::5803639890215804240::1746393636::0::1::::<>State<><>0<>0<><>::
+RoamState.gd::GDScript/GDScript::8478952303743597460::1746393636::0::1::::<>State<><>0<>0<><>::
+State.gd::GDScript/GDScript::7414276506756523428::1746393636::0::1::::State<>Node<><>0<>0<><>::
+transitionState.gd::GDScript/GDScript::4182504867520646213::1746393636::0::1::::<>State<><>0<>0<><>::
+::res://Scripts/Menus/::1746393636
+leaderboard.gd::GDScript/GDScript::8743154155757818922::1746393636::0::1::::Leaderboard<>Control<><>0<>0<><>::
+main_menu.gd::GDScript/GDScript::1787915170602454966::1746393636::0::1::::<>Control<><>0<>0<><>::
+::res://Scripts/Menus/common/::1746393636
+screen_change_btn.gd::GDScript/GDScript::6379644209885038088::1746393636::0::1::::<>Button<><>0<>0<><>::
+::res://sprites/::1746394473
+bg placeholder.jpg::CompressedTexture2D/CompressedTexture2D::6227520136946869517::1746393636::1746394473::1::::<><><>0<>0<>6e5a74e9d7482438f6474d611ed14487<>res://.godot/imported/bg placeholder.jpg-455c614c43db6fc4be623a45af2408e9.ctex::
+Blast Spell Sprite Sheet.png::CompressedTexture2D/CompressedTexture2D::4073663337444548407::1746393636::1746394473::1::::<><><>0<>0<>760dba1e9ba49c2e1b91af10bf284b9a<>res://.godot/imported/Blast Spell Sprite Sheet.png-45614559744adffd496f2f8e4540ad97.ctex::
+blue_basic.png::CompressedTexture2D/CompressedTexture2D::4708680905563747717::1746393636::1746394473::1::::<><><>0<>0<>6e0eab0d2f49c1a872761a4f04006df9<>res://.godot/imported/blue_basic.png-ded8076d3a9255a080ae7ceafe38eeef.ctex::
+red_basic.png::CompressedTexture2D/CompressedTexture2D::7040182570699981305::1746393636::1746394473::1::::<><><>0<>0<>8b7fa8cfa9afbc55faa2e0d265d7a328<>res://.godot/imported/red_basic.png-6a0d648099b230a6672b3477f507cba0.ctex::
+::res://sprites/animations/::1746394591
+blue_mage_animation.tres::SpriteFrames::3361963783023823636::1746394591::0::1::::<><><>0<>0<><>::uid://b8c6j0ji185xx::::res://sprites/blue_basic.png
+red_mage_animation.tres::SpriteFrames/SpriteFrames::2691524904700553602::1746393636::0::1::::<><><>0<>0<><>::uid://c7kk1p1q8slfd::::res://sprites/red_basic.png
+::res://sprites/tileset/::1746394473
+atlas-props-old prison.png::CompressedTexture2D/CompressedTexture2D::1990256166742223896::1746393636::1746394473::1::::<><><>0<>0<>d5b5edea1992c35fd646ba8fcd141492<>res://.godot/imported/atlas-props-old prison.png-1975a879538f892616712d2dbeeadaf8.ctex::
+magic flame.png::CompressedTexture2D/CompressedTexture2D::6200763037519947779::1746393636::1746394473::1::::<><><>0<>0<>2081fcaa73978bc49c52a0837f53ab33<>res://.godot/imported/magic flame.png-18694f048ee62d05bae5edc23bff8a26.ctex::
+Prison Gate- particles.png::CompressedTexture2D/CompressedTexture2D::5240173801436897729::1746393636::1746394473::1::::<><><>0<>0<>d1a1f5100a70f4052c21de042f19c1b8<>res://.godot/imported/Prison Gate- particles.png-28ec5decc2adf3cbabb8c228c8ff48d5.ctex::
+Prison Gate-flames.png::CompressedTexture2D/CompressedTexture2D::3280582020941241378::1746393636::1746394473::1::::<><><>0<>0<>8045a31b8d6340d23ce0d7899d49afdd<>res://.godot/imported/Prison Gate-flames.png-fd65ecb8633b25ca654f55ca4e144ec9.ctex::
+Prison Gate-vortex.png::CompressedTexture2D/CompressedTexture2D::6662468625569341636::1746393636::1746394473::1::::<><><>0<>0<>579bf46740ab68a01bfd3c4385bd69a4<>res://.godot/imported/Prison Gate-vortex.png-8ab559d5cd5f460e5053f40ec4b47ef7.ctex::
+Prison Gate-with wall.png::CompressedTexture2D/CompressedTexture2D::198321066241188052::1746393636::1746394473::1::::<><><>0<>0<>95b76aff90983181aad660de868ad002<>res://.godot/imported/Prison Gate-with wall.png-a927dcb1e7625339af68015c0ee1bb00.ctex::
+Tileset-Terrain-old prison.png::CompressedTexture2D/CompressedTexture2D::4757841819608409316::1746393636::1746394473::1::::<><><>0<>0<>05e163c5f22832cb5eef8dc0cab17615<>res://.godot/imported/Tileset-Terrain-old prison.png-b0aeb0471dfc3a0aff7e0811e265b73c.ctex::

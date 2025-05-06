@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://djv4s1pjcg3s"]
+[gd_scene load_steps=11 format=4 uid="uid://djv4s1pjcg3s"]
 
 [ext_resource type="Script" uid="uid://dng0msak83tjp" path="res://Scripts/Game/game.gd" id="1_qxfds"]
 [ext_resource type="Texture2D" uid="uid://cuywl1506fvab" path="res://sprites/bg placeholder.jpg" id="2_qikps"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://c6goqr4g2vvhh" path="res://Scenes/Game/drop_zone.tscn" id="4_i1e5p"]
 [ext_resource type="Script" uid="uid://yrp4rrw7tn7b" path="res://Scripts/Game/ui.gd" id="5_ciybh"]
 [ext_resource type="PackedScene" uid="uid://dskxqqcfxuul6" path="res://Scenes/Game/modal.tscn" id="6_flgk0"]
+[ext_resource type="AudioStream" uid="uid://c82nf714jhehv" path="res://Assets/music/while_playing.wav" id="8_xfil1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qxfds"]
 size = Vector2(1252.5, 20)
@@ -127,5 +128,9 @@ horizontal_alignment = 1
 
 [node name="Modal" parent="UI" instance=ExtResource("6_flgk0")]
 visible = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_xfil1")
+autoplay = true
 
 [connection signal="timeout" from="MageSpawnTime" to="." method="_on_mage_spawn_time_timeout"]

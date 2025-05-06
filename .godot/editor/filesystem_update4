@@ -1,4 +1,10 @@
-res://Scenes/Game/game.tscn
+res://Scenes/Mage/mage.tscn
 res://sprites/animations/blue_mage_animation.tres
 res://resources/tilemap.tres
-res://Scripts/Game/SpawnAlgorithms/SpawnAlgorithm.gd
+res://Scenes/Menus/main_menu.tscn
+res://Scenes/Game/game.tscn
+res://Scenes/Menus/leaderboard.tscn
+res://Scenes/Menus/Instructions.tscn
+res://Scenes/Menus/Common/screen_change_btn.tscn
+res://sprites/animations/red_mage_animation.tres
+res://Scenes/Game/mage_spawner.tscn
