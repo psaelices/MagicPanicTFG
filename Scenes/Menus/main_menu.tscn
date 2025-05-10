@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://0qcx4dlwo6y1" path="res://Scripts/Menus/main_menu.gd" id="1_38aua"]
 [ext_resource type="PackedScene" uid="uid://dxuiqckvc5f4c" path="res://Scenes/Menus/Common/screen_change_btn.tscn" id="2_pha2q"]
-[ext_resource type="AudioStream" uid="uid://bvljapux6jg0k" path="res://Assets/music/menu_music.wav" id="3_penys"]
+[ext_resource type="AudioStream" uid="uid://deolqrrrwf8m2" path="res://Assets/music/menu_music.ogg" id="3_penys"]
 
 [node name="Main Menu" type="Control"]
 layout_mode = 3

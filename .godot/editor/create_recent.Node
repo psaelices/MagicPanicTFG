@@ -1,3 +1,6 @@
+Sprite2D
+AnimatedSprite2D
+Camera2D
 AudioStreamPlayer
 ColorRect
 TextureRect
@@ -10,5 +13,3 @@ PanelContainer
 HBoxContainer
 Label
 CanvasLayer
-CollisionShape2D
-StaticBody2D

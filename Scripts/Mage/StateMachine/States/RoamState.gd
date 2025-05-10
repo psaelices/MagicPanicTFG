@@ -17,8 +17,10 @@ func start(args: Dictionary = {}):
 		mage.sprite.play('walk')
 
 func physics(_delta):
-	mage.velocity = direction * speed
-	mage.move_and_slide()
+	var collision = mage.move_and_collide(direction * speed * _delta)
+	if collision:
+		direction = direction.bounce(collision.get_normal()).normalized()
+
 
 func randomize_direction():
 	direction.x = randf_range(-1,1)
