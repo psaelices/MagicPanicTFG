@@ -9,3 +9,5 @@ res://Scripts/Game/door.gd
 res://Scenes/Game/torch.tscn
 res://Scenes/Game/stage.tscn
 res://Scripts/Game/stage.gd
+res://Scripts/Game/camera_2d.gd
+res://Scripts/Game/stage_camera_2d.gd

@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dhp4dk5sro5li"]
+[gd_scene load_steps=5 format=3 uid="uid://dhp4dk5sro5li"]
 
 [ext_resource type="Script" uid="uid://0qcx4dlwo6y1" path="res://Scripts/Menus/main_menu.gd" id="1_38aua"]
 [ext_resource type="PackedScene" uid="uid://dxuiqckvc5f4c" path="res://Scenes/Menus/Common/screen_change_btn.tscn" id="2_pha2q"]
 [ext_resource type="AudioStream" uid="uid://deolqrrrwf8m2" path="res://Assets/music/menu_music.ogg" id="3_penys"]
+[ext_resource type="PackedScene" uid="uid://ds0xtlsf6mhcm" path="res://Scenes/Game/stage.tscn" id="4_aur2u"]
 
 [node name="Main Menu" type="Control"]
 layout_mode = 3
@@ -18,6 +19,7 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -69,5 +71,10 @@ horizontal_alignment = 1
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_penys")
 autoplay = true
+
+[node name="Stage" parent="." instance=ExtResource("4_aur2u")]
+z_index = -1
+position = Vector2(608, 340)
+scale = Vector2(1.9, 1.9)
 
 [connection signal="pressed" from="PanelContainer2/MarginContainer/PanelContainer/VBoxContainer/ExitGameBtn" to="." method="_on_exit_game_btn_pressed"]

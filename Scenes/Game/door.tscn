@@ -418,7 +418,4 @@ position = Vector2(1, 5)
 sprite_frames = SubResource("SpriteFrames_fb4f1")
 animation = &"idle"
 
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(3, 3)
-
 [connection signal="animation_finished" from="Door" to="." method="_on_door_animation_finished"]

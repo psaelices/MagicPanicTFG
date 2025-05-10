@@ -8002,9 +8002,6 @@ tile_set = SubResource("TileSet_7elu4")
 tile_map_data = PackedByteArray("AAACAPz/AgAxAB4AAAD9//z/AgAxAB4AAAAEAPz/AgAoACMAAAD7//z/AgAoACMAAAD2//z/AgAaACgAAAD3//z/AgAbACgAAAD4//v/AgAcACcAAAD4//z/AgAcACgAAAAHAPv/AgASACcAAAAHAPz/AgASACgAAAAIAPz/AgATACgAAAAIAP3/AgATACkAAAAJAPz/AgAUACgAAAAJAP3/AgAUACkAAAA=")
 tile_set = SubResource("TileSet_7elu4")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
-
 [node name="Door" parent="." instance=ExtResource("4_yeobx")]
 position = Vector2(0, -101)
 
