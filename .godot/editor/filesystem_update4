@@ -7,3 +7,5 @@ res://Scenes/Game/mage_spawner.tscn
 res://Scenes/Game/door.tscn
 res://Scripts/Game/door.gd
 res://Scenes/Game/torch.tscn
+res://Scenes/Game/stage.tscn
+res://Scripts/Game/stage.gd

@@ -1,10 +1,10 @@
-Sprite2D
 AnimatedSprite2D
+Sprite2D
+TileMapLayer
 Camera2D
 AudioStreamPlayer
 ColorRect
 TextureRect
-TileMapLayer
 TileMap
 Button
 MarginContainer
@@ -12,4 +12,3 @@ VBoxContainer
 PanelContainer
 HBoxContainer
 Label
-CanvasLayer
