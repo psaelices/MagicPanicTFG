@@ -1,13 +1,7 @@
-res://Scenes/Menus/main_menu.tscn
-res://sprites/animations/blue_mage_animation.tres
-res://resources/tilemap.tres
-res://Scenes/Game/game.tscn
-res://Scenes/Mage/mage.tscn
-res://Scenes/Game/mage_spawner.tscn
 res://Scenes/Game/door.tscn
 res://Scripts/Game/door.gd
-res://Scenes/Game/torch.tscn
+res://Scenes/Game/mage_spawner.tscn
+res://resources/tilemap.tres
+res://Scripts/Game/game.gd
+res://Scenes/Game/game.tscn
 res://Scenes/Game/stage.tscn
-res://Scripts/Game/stage.gd
-res://Scripts/Game/camera_2d.gd
-res://Scripts/Game/stage_camera_2d.gd

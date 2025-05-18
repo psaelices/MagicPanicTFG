@@ -10,6 +10,9 @@ var mages: Array[Mage] = []
 ##Metodo usado para spawnear magos
 var current_spawn_algorithm: SpawnAlgorithm = SpawnAlgorithm.new()
 
+func _ready():
+	get_node("Stage/Door").open_door()
+
 func _on_mage_spawn_time_timeout() -> void:
 	var mages: Array[Mage] = current_spawn_algorithm.spawn(spawners)
 	for m in mages: add_mage(m) #Contar magos generados

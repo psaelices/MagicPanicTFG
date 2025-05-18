@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=3 uid="uid://bu8rftwdv070p"]
+[gd_scene load_steps=61 format=3 uid="uid://bu8rftwdv070p"]
 
 [ext_resource type="Texture2D" uid="uid://c3ck30omu5o7" path="res://sprites/tileset/Prison Gate-with wall.png" id="1_5k6mb"]
 [ext_resource type="Script" uid="uid://3noar2tgd8sn" path="res://Scripts/Game/door.gd" id="1_gcutm"]
@@ -97,6 +97,10 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_eyynb"]
+atlas = ExtResource("1_5k6mb")
+region = Rect2(0, 0, 96, 118)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_l4xnr"]
 atlas = ExtResource("1_5k6mb")
 region = Rect2(0, 0, 96, 118)
@@ -171,6 +175,14 @@ region = Rect2(1632, 0, 96, 118)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_f07py"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eyynb")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_l4xnr")
@@ -409,9 +421,7 @@ frame_progress = 0.136626
 
 [node name="Door" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_f07py")
-animation = &"open"
-frame = 17
-frame_progress = 1.0
+animation = &"idle"
 
 [node name="Door_Eyes" type="AnimatedSprite2D" parent="."]
 position = Vector2(1, 5)
