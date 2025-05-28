@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://djv4s1pjcg3s"]
+[gd_scene load_steps=14 format=4 uid="uid://djv4s1pjcg3s"]
 
 [ext_resource type="Script" uid="uid://dng0msak83tjp" path="res://Scripts/Game/game.gd" id="1_qxfds"]
 [ext_resource type="PackedScene" uid="uid://ds0xtlsf6mhcm" path="res://Scenes/Game/stage.tscn" id="2_huoen"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://c6goqr4g2vvhh" path="res://Scenes/Game/drop_zone.tscn" id="4_i1e5p"]
 [ext_resource type="Script" uid="uid://yrp4rrw7tn7b" path="res://Scripts/Game/ui.gd" id="5_ciybh"]
 [ext_resource type="PackedScene" uid="uid://dskxqqcfxuul6" path="res://Scenes/Game/modal.tscn" id="6_flgk0"]
+[ext_resource type="FontFile" uid="uid://bd56kp3xgm6kf" path="res://Assets/fonts/PixeloidSans.ttf" id="8_qtymf"]
 [ext_resource type="AudioStream" uid="uid://bc4l2hecl10ne" path="res://Assets/music/while_playing.ogg" id="8_xfil1"]
 [ext_resource type="Script" uid="uid://dae212v8n8v0w" path="res://Scripts/Game/camera_2d.gd" id="10_7jvlm"]
 
@@ -127,6 +128,7 @@ size_flags_horizontal = 8
 
 [node name="Label" type="Label" parent="UI/HBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("8_qtymf")
 theme_override_font_sizes/font_size = 32
 text = "Puntos: "
 horizontal_alignment = 2
@@ -134,6 +136,7 @@ horizontal_alignment = 2
 [node name="Points_Lbl" type="Label" parent="UI/HBoxContainer"]
 custom_minimum_size = Vector2(60, 0)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("8_qtymf")
 theme_override_font_sizes/font_size = 32
 text = "0"
 horizontal_alignment = 1

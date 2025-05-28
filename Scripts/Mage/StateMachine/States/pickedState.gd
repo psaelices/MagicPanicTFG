@@ -1,5 +1,10 @@
 extends State
 
+const UPPER_LIMIT = 210.5
+const LOWER_LIMIT = 615.0
+const START_LIMIT = 20
+const END_LIMIT = 1206
+
 func start(_args: Dictionary = {}):
 	mage.set_collision_layer_value(1, false)
 	mage.set_collision_mask_value(2, false)
@@ -17,6 +22,14 @@ func physics(_delta: float):
 		return
 	
 	var mouse_pos := mage.get_global_mouse_position()
+	
+	if mouse_pos.y < UPPER_LIMIT or mouse_pos.y > LOWER_LIMIT or mouse_pos.x < START_LIMIT or mouse_pos.x > END_LIMIT:
+		if mage.charging:
+			state_machine.transition_to('charge')
+		else:
+			state_machine.transition_to('roam', {'play_anim': true})
+		return
+		
 	mage.global_position = mouse_pos
 
 func end():

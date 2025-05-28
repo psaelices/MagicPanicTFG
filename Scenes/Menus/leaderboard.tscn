@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://cuxtrwxlqm3sc"]
+[gd_scene load_steps=5 format=3 uid="uid://cuxtrwxlqm3sc"]
 
 [ext_resource type="PackedScene" uid="uid://dxuiqckvc5f4c" path="res://Scenes/Menus/Common/screen_change_btn.tscn" id="1_1ef8l"]
 [ext_resource type="Script" uid="uid://dwtiqbd8jw355" path="res://Scripts/Menus/leaderboard.gd" id="1_f77ex"]
+[ext_resource type="FontFile" uid="uid://bd56kp3xgm6kf" path="res://Assets/fonts/PixeloidSans.ttf" id="2_3ik00"]
+[ext_resource type="PackedScene" uid="uid://ds0xtlsf6mhcm" path="res://Scenes/Game/stage.tscn" id="3_o5qdq"]
 
 [node name="Leaderboard" type="Control"]
 layout_mode = 3
@@ -33,6 +35,7 @@ layout_mode = 2
 [node name="TitleLbl" type="Label" parent="PanelContainer/MarginContainer/Leaderboard"]
 layout_mode = 2
 size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("2_3ik00")
 theme_override_font_sizes/font_size = 64
 text = "Leaderboard"
 horizontal_alignment = 1
@@ -43,8 +46,18 @@ size_flags_vertical = 3
 
 [node name="ScoreContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/Leaderboard/ScrollContainer"]
 layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+alignment = 1
 
 [node name="MainMenuBtn" parent="PanelContainer/MarginContainer/Leaderboard" instance=ExtResource("1_1ef8l")]
 layout_mode = 2
-text = "Regresar al menú principal"
+theme_override_fonts/font = ExtResource("2_3ik00")
+theme_override_font_sizes/font_size = 20
+text = "Back to main menu"
 scene_path = "res://Scenes/Menus/main_menu.tscn"
+
+[node name="Stage" parent="." instance=ExtResource("3_o5qdq")]
+z_index = -1
+position = Vector2(608, 340)
+scale = Vector2(1.9, 1.9)

@@ -11,6 +11,7 @@ var mages: Array[Mage] = []
 var current_spawn_algorithm: SpawnAlgorithm = SpawnAlgorithm.new()
 
 func _ready():
+	GameGlobal.reset_values()
 	get_node("Stage/Door").open_door()
 
 func _on_mage_spawn_time_timeout() -> void:

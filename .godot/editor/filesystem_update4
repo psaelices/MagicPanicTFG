@@ -1,7 +1,9 @@
-res://Scenes/Game/door.tscn
-res://Scripts/Game/door.gd
-res://Scenes/Game/mage_spawner.tscn
-res://resources/tilemap.tres
+res://Scenes/Menus/Instructions.tscn
 res://Scripts/Game/game.gd
+res://Scenes/Menus/leaderboard.tscn
+res://Scenes/Menus/main_menu.tscn
+res://resources/tilemap.tres
+res://Scripts/Mage/StateMachine/States/pickedState.gd
+res://Scenes/Game/modal.tscn
+res://Scripts/Menus/leaderboard.gd
 res://Scenes/Game/game.tscn
-res://Scenes/Game/stage.tscn

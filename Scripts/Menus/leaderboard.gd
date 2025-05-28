@@ -2,14 +2,15 @@ extends Control
 class_name Leaderboard
 
 @export var scores: Array[Dictionary] = [
-	{'name': 'ejemplo','score': 10},
-	{'name': 'ejemplo','score': 20},
-	{'name': 'ejemplo','score': 30},
-	{'name': 'ejemplo','score': 40},
-	{'name': 'ejemplo','score': 50},
-	{'name': 'ejemplo','score': 100},
-	{'name': 'ejemplo','score': 150},
-	{'name': 'ejemplo','score': 200},
+	{'name': 'ShadowBlitz','score': 10},
+	{'name': 'PixelRider','score': 20},
+	{'name': 'NovaFury','score': 30},
+	{'name': 'CryoHex','score': 40},
+	{'name': 'IronGhost','score': 50},
+	{'name': 'LunaStrike','score': 100},
+	{'name': 'ByteHunter','score': 150},
+	{'name': 'Z3r0Fox','score': 200},
+	{'name': 'LiveHidralisk','score': 250},
 ]
 
 @onready var score_container: VBoxContainer = $PanelContainer/MarginContainer/Leaderboard/ScrollContainer/ScoreContainer
