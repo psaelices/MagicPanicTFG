@@ -25,5 +25,5 @@ func spawn_mage()-> Mage:
 	mage.global_position = self.global_position
 	
 	#Ejecutar transicion de entrada a pantalla
-	mage.state_machine.transition_to('transition', {'direction': direction, 'delete_at_end': false})
+	mage.state_machine.transition_to('transition', {'direction': direction, 'distance': 100.0, 'delete_at_end': false})
 	return mage

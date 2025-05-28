@@ -16,7 +16,8 @@ func start(args: Dictionary = {}):
 	
 	mage.sprite.flip_h = args.direction.x < .5
 	
-	var final_pos: Vector2 = mage.global_position + args.direction * 250
+	var distance:float = args.get("distance", 100.0)
+	var final_pos: Vector2 = mage.global_position + args.direction * distance
 	tween.tween_property(mage,"global_position",final_pos,.5)
 	tween.finished.connect(_on_tween_finished)
 
