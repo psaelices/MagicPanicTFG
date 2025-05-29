@@ -1,9 +1,9 @@
-res://Scenes/Menus/leaderboard.tscn
+res://Scenes/Mage/mage.tscn
 res://resources/tilemap.tres
-res://Scenes/Menus/main_menu.tscn
-res://Scenes/Menus/Instructions.tscn
-res://Scenes/Game/modal.tscn
-res://Scenes/Game/game.tscn
-res://Scripts/Mage/StateMachine/States/transitionState.gd
-res://Scripts/Game/mage_spawner.gd
-res://Scripts/Mage/StateMachine/States/RoamState.gd
+res://sprites/animations/blue_mage_animation.tres
+res://sprites/animations/blue_uncommon_animation.tres
+res://sprites/animations/red_mage_animation.tres
+res://sprites/animations/blue_rare_animation.tres
+res://sprites/animations/red_rare_animation.tres
+res://sprites/animations/blue_special_animation.tres
+res://sprites/animations/red_special_animation.tres
