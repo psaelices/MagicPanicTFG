@@ -19,7 +19,25 @@ func spawn_mage()-> Mage:
 	
 	#Obtener color aleatorio
 	var color: String = 'blue' if randf() > 0.5 else 'red'
-	mage.load_sprites(color)
+	var type: String 
+	var roll := randf()
+	
+	if color == 'blue':
+		if roll < 0.6:
+			type = 'blue'
+		elif roll < 0.9:
+			type = 'blue_rare'
+		else:
+			type = 'blue_special'
+	else:
+		if roll < 0.6:
+			type = 'red'
+		elif roll < 0.9:
+			type = 'red_rare'
+		else:
+			type = 'red_special'
+	
+	mage.load_sprites(type)
 	
 	#Posicion del mago
 	mage.global_position = self.global_position

@@ -44,11 +44,18 @@ func load_sprites(_type: String) -> void:
 	var frames: SpriteFrames
 	type = _type
 	match type:
-		'blue':
-			frames = load("res://sprites/animations/blue_mage_animation.tres")
 		'red':
 			frames = load("res://sprites/animations/red_mage_animation.tres")
-	
+		'red_rare':
+			frames = load("res://sprites/animations/red_rare_animation.tres")
+		'red_special':
+			frames = load("res://sprites/animations/red_special_animation.tres")
+		'blue':
+			frames = load("res://sprites/animations/blue_mage_animation.tres")
+		'blue_rare':
+			frames = load("res://sprites/animations/blue_rare_animation.tres")
+		'blue_special':
+			frames = load("res://sprites/animations/blue_special_animation.tres")
 	sprite.sprite_frames = frames
 
 func _on_input_event(_viewport: Node, event: InputEvent, _shape_idx: int) -> void:
