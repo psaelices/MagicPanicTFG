@@ -1,6 +1,10 @@
 extends Control
 class_name Leaderboard
 
+@export var custom_font: Font
+@export var font_size: int = 24
+
+
 @export var scores: Array[Dictionary] = [
 	{'name': 'ShadowBlitz','score': 10},
 	{'name': 'PixelRider','score': 20},
@@ -30,6 +34,10 @@ func refrescar()->void:
 	for i in range(0, scores.size()):
 		var lbl := Label.new()
 		score_container.add_child(lbl)
+		
+		if custom_font:
+			lbl.add_theme_font_override("font", custom_font)
+			lbl.add_theme_font_size_override("font_size", font_size)
 		
 		var data: Dictionary = scores[i]
 		var txt := "#{0}. {1} {2}pts".format([i+1,data.name, data.score])

@@ -8,7 +8,7 @@ func _ready():
 
 func open():
 	show()
-	leaderboard.scores.append({'name': 'jugador', 'score': GameGlobal.points})
+	leaderboard.scores.append({'name': 'Player', 'score': GameGlobal.points})
 	leaderboard.refrescar()
 
 

@@ -5,12 +5,33 @@ var mage_scene: PackedScene = load("res://Scenes/Mage/mage.tscn")
 
 ##Direccion a la que caminan los magos al ser creados
 @export var direction: Vector2
+var _pending_directions: Array[Vector2] = []
+
+func get_random_spawn_direction() -> Vector2:
+	var base = direction.normalized()
+	var left = (direction + Vector2(-0.5, 0)).normalized()
+	var right = (direction + Vector2(0.5, 0)).normalized()
+
+	var variations = [base, left, right]
+	return variations[randi() % variations.size()]
 
 func spawn_mages(n: int) -> Array[Mage]:
 	var mages: Array[Mage] = []
-	for i in range(0,n):
-		mages.append(spawn_mage())
+	var base = direction.normalized()
+	var left = (direction + Vector2(-0.5, 0)).normalized()
+	var right = (direction + Vector2(0.5, 0)).normalized()
 	
+	if n == 1:
+		_pending_directions = [ [base, left, right].pick_random() ]
+	elif n == 2:
+		_pending_directions = [left, right]
+	elif n >= 3:
+		_pending_directions = [left, base, right]
+	else:
+		_pending_directions = []
+
+	for i in range(n):
+		mages.append(spawn_mage())
 	return mages
 
 func spawn_mage()-> Mage:
@@ -42,6 +63,17 @@ func spawn_mage()-> Mage:
 	#Posicion del mago
 	mage.global_position = self.global_position
 	
-	#Ejecutar transicion de entrada a pantalla
-	mage.state_machine.transition_to('transition', {'direction': direction, 'distance': 100.0, 'delete_at_end': false})
+	var spawn_dir: Vector2
+	
+	if _pending_directions.size() > 0:
+		spawn_dir = _pending_directions.pop_front()
+	else:
+		spawn_dir = get_random_spawn_direction()
+
+	mage.state_machine.transition_to("transition", {
+		"direction": spawn_dir,
+		"distance": 100.0,
+		"delete_at_end": false
+	})
+	
 	return mage
