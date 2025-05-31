@@ -7,6 +7,14 @@ res://Scenes/Game/modal.tscn
 res://Scenes/Game/game.tscn
 res://Scenes/Mage/mage.tscn
 res://Scenes/Game/drop_zone.tscn
-res://Scripts/Game/drop_zone.gd
-res://Scripts/Game/mage_spawner.gd
+res://Scripts/Globals/Music_Player.gd
+res://Scripts/Game/game.gd
+res://Scripts/Menus/main_menu.gd
 res://Scripts/Mage/mage.gd
+res://sprites/animations/blue_rare_animation.tres
+res://sprites/animations/blue_special_animation.tres
+res://sprites/animations/red_mage_animation.tres
+res://sprites/animations/red_rare_animation.tres
+res://sprites/animations/red_special_animation.tres
+res://Scripts/Game/drop_zone.gd
+res://Scripts/Game/SpawnAlgorithms/Spawn_50.gd

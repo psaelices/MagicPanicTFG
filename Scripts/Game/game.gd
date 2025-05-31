@@ -13,6 +13,7 @@ var current_spawn_algorithm: SpawnAlgorithm = SpawnAlgorithm.new()
 func _ready():
 	GameGlobal.reset_values()
 	get_node("Stage/Door").open_door()
+	MusicPlayer.stop_music()
 
 func _on_mage_spawn_time_timeout() -> void:
 	var mages: Array[Mage] = current_spawn_algorithm.spawn(spawners)

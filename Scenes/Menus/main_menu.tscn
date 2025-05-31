@@ -1,9 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://dhp4dk5sro5li"]
+[gd_scene load_steps=6 format=3 uid="uid://dhp4dk5sro5li"]
 
 [ext_resource type="Script" uid="uid://0qcx4dlwo6y1" path="res://Scripts/Menus/main_menu.gd" id="1_38aua"]
 [ext_resource type="PackedScene" uid="uid://dxuiqckvc5f4c" path="res://Scenes/Menus/Common/screen_change_btn.tscn" id="2_pha2q"]
 [ext_resource type="FontFile" uid="uid://bd56kp3xgm6kf" path="res://Assets/fonts/PixeloidSans.ttf" id="3_chkef"]
-[ext_resource type="AudioStream" uid="uid://deolqrrrwf8m2" path="res://Assets/music/menu_music.ogg" id="3_penys"]
 [ext_resource type="PackedScene" uid="uid://ds0xtlsf6mhcm" path="res://Scenes/Game/stage.tscn" id="4_aur2u"]
 [ext_resource type="FontFile" uid="uid://cveuvvmcckij5" path="res://Assets/fonts/PixeloidSans-Bold.ttf" id="4_neey8"]
 
@@ -75,10 +74,6 @@ theme_override_fonts/font = ExtResource("4_neey8")
 theme_override_font_sizes/font_size = 64
 text = "Magic Panic"
 horizontal_alignment = 1
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_penys")
-autoplay = true
 
 [node name="Stage" parent="." instance=ExtResource("4_aur2u")]
 z_index = -1

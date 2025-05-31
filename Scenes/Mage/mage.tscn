@@ -84,7 +84,7 @@ script = ExtResource("1_o1hby")
 [node name="MageSprite" type="AnimatedSprite2D" parent="."]
 scale = Vector2(3, 3)
 sprite_frames = ExtResource("1_ebuwf")
-animation = &"explode"
+animation = &"picked_up"
 
 [node name="ParticlesSprite" type="AnimatedSprite2D" parent="."]
 scale = Vector2(3, 3)
@@ -133,4 +133,9 @@ mage = NodePath("../..")
 script = ExtResource("11_qk2jc")
 mage = NodePath("../..")
 
+[node name="SFXPlayer" type="AudioStreamPlayer2D" parent="."]
+
+[node name="AreaPoint" type="AudioStreamPlayer2D" parent="."]
+
 [connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="frame_changed" from="MageSprite" to="." method="_on_mage_sprite_frame_changed"]

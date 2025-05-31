@@ -8,6 +8,7 @@ func _on_mage_entered(mage: Mage) -> void:
 	print(mage)
 	if mage.type in type:
 		print('mage exiting')
+		mage.play_sound_effect('res://Assets/sound_effects/leaving_mages.wav')
 		mage.exit_screen(exit_dir)
 		GameGlobal.increment_points()
 	else:
