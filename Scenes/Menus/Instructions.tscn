@@ -32,6 +32,7 @@ theme_override_constants/margin_bottom = 10
 layout_mode = 2
 
 [node name="Label" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
+z_index = 4
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_fonts/font = ExtResource("1_nkvpg")
@@ -40,8 +41,31 @@ text = "Instructions"
 
 [node name="Label2" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
+text = "                       
+
+"
+
+[node name="Label3" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer"]
+z_index = 1
+layout_mode = 2
 theme_override_fonts/font = ExtResource("2_llmy7")
-text = "Aquí se escribiran las reglas del juego."
+theme_override_font_sizes/font_size = 19
+text = "Click and drag the mages to the zone that 
+matches their color before they explode.
+
+Each mage moves differently and has a 
+unique speed, so stay alert!
+
+Your goal is to secure as many mages as possible 
+without making mistakes or letting one explode.
+
+As you score more points, the game gets harder: more mages 
+will appear more frequently.
+
+The game ends when you fail, and you'll see 
+your score on the leaderboard."
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="ScreenChangeBtn" parent="PanelContainer/MarginContainer" instance=ExtResource("1_xttbp")]
 layout_mode = 2

@@ -33,7 +33,7 @@ size_flags_vertical = 3
 layout_mode = 2
 size_flags_horizontal = 8
 theme_override_fonts/font = ExtResource("3_vqdb6")
-theme_override_font_sizes/font_size = 20
-text = "Volver a jugar"
+theme_override_font_sizes/font_size = 28
+text = "Play Again"
 
 [connection signal="pressed" from="MarginContainer/PanelContainer/VBoxContainer/ResetBtn" to="." method="_on_reset_btn_pressed"]
