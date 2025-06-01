@@ -41,12 +41,12 @@ func add_mage(m: Mage):
 	m.exploded.connect(_on_mage_exploded)
 	increment_mage_count()
 
-func _on_mage_exploded(): #Explotar al resto de magos
+func _on_mage_exploded(): #Explode the other mages 
 	disable_explode_connections()
 	spawn_timer.stop()
 	
 	for m in mages:
-		if !is_instance_valid(m) or m.is_exploded: continue #Brincarse al mago que explotó
+		if !is_instance_valid(m) or m.is_exploded: continue #Get ride the mage just exploded
 		m.explode()
 		
 	GameGlobal.game_over.emit()

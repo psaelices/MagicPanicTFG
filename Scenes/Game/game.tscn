@@ -51,11 +51,11 @@ tile_map_data = PackedByteArray("AAAGAP//AAAsAA4AAAAGAAAAAAAsAA8AAAAGAAEAAAAsABA
 tile_set = ExtResource("3_vifcx")
 
 [node name="MageSpawnerTop" parent="." instance=ExtResource("3_qikps")]
-position = Vector2(612, 154)
+position = Vector2(614, 154)
 direction = Vector2(0, 1)
 
 [node name="MageSpawnerBottom" parent="." instance=ExtResource("3_qikps")]
-position = Vector2(614, 697)
+position = Vector2(614, 666)
 direction = Vector2(0, -1)
 
 [node name="MageSpawnTime" type="Timer" parent="."]
@@ -130,7 +130,7 @@ size_flags_horizontal = 8
 layout_mode = 2
 theme_override_fonts/font = ExtResource("8_qtymf")
 theme_override_font_sizes/font_size = 32
-text = "Puntos: "
+text = "Score: "
 horizontal_alignment = 2
 
 [node name="Points_Lbl" type="Label" parent="UI/HBoxContainer"]

@@ -16,6 +16,7 @@ signal exploded
 
 
 var type: String = 'blue'
+var speed: float
 
 var charging: bool = false
 var is_exploded: bool = false
@@ -47,6 +48,14 @@ func exit_screen(exit_dir: Vector2) -> void:
 func load_sprites(_type: String) -> void:
 	var frames: SpriteFrames
 	type = _type
+	
+	if type in ['red_special', 'blue_special']:
+		speed = 200.0
+	elif type in ['red_rare', 'blue_rare']:
+		speed = 120.0
+	else:
+		speed = 80.0 
+		
 	match type:
 		'red':
 			frames = load("res://sprites/animations/red_mage_animation.tres")
@@ -85,7 +94,7 @@ func _on_mage_sprite_frame_changed() -> void:
 				sfx_player.play()
 		
 		"explode":
-			if sprite.frame == 6:
+			if sprite.frame == 5:
 				sfx_player.stream = load("res://Assets/sound_effects/explosion.wav")
 				sfx_player.play()
 				
